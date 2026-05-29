@@ -34,7 +34,7 @@ const Navbar = () => {
                             <Box className="logo" />
 
                             <span className="name">
-                                Roomify
+                                HABIBI-Visualizer
                             </span>
                         </div>
                         <ul className="links">
