@@ -7,6 +7,11 @@ import { useNavigate } from "react-router";
 import { useState } from "react";
 import { createProject } from "../../lib/puter.action";
 
+/**
+ * Provide metadata for the home route.
+ *
+ * @returns An array of meta entries: one setting the page `title` to "HABIB-IVisualizer", and one setting the `description` content to "Welcome to HABIBI-Visualizer!".
+ */
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "HABIB-IVisualizer" },
@@ -14,6 +19,15 @@ export function meta({ }: Route.MetaArgs) {
   ];
 }
 
+/**
+ * Render the HABIBI-Visualizer home page and manage project uploads.
+ *
+ * Initializes navigation and a local `projects` state array. Provides an upload handler that
+ * creates a new project from a base64 floor-plan image, prepends it to local state, and
+ * navigates to the visualizer route with the project's initial image data.
+ *
+ * @returns The React element for the home route (landing page).
+ */
 export default function Home() {
     const navigate = useNavigate();
     const [projects, setprojects] = useState<DesignItem[]>([]); 
