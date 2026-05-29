@@ -12,7 +12,7 @@ export const getOrCreateHostingConfig = async (): Promise<HostingConfig | null> 
     const subdomain = createHostingSlug();
 
     try {
-        const created = await puter.hosting.create(subdomain, ".");
+        const created = await puter.hosting.create(subdomain, '.');
 
         const record = { subdomain: created.subdomain};
 
