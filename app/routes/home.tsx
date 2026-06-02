@@ -76,12 +76,12 @@ export default function Home() {
           <div className="dot">
             <div className="pulse"></div>
           </div>
-          <p>Introducing HABIBI-Visualizer 2.0</p>
+          <p>Introducing HABIBI-Visualizer</p>
         </div>
 
         <h1>ANO TARA? SEND MO FLOOR PLAN MO</h1>
         <p className="subtitle">
-          Roomify is an AI-first design environment that help you visualize, render, and ship
+          HABIBI-Visualizer is an AI-first design environment that help you visualize, render, and ship
           architectural projects faster than ever
         </p>
 
