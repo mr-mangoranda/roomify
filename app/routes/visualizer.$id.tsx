@@ -26,7 +26,7 @@ const VisualizerId = () => {
 
     const link = document.createElement('a');
     link.href = currentImage;
-    link.download = `roomify-${id || 'design'}.png`;
+    link.download = `habibi-${id || 'design'}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -117,7 +117,7 @@ const VisualizerId = () => {
         <div className="brand">
           <Box className="logo" />
 
-          <span className="name">Roomify</span>
+          <span className="name">HABIBI-Visualizer</span>
         </div>
         <Button variant="ghost" size="sm" onClick={handleBack} className="exit">
           <X className="icon" /> Exit Editor
